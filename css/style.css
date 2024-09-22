@@ -25,62 +25,62 @@ body {
     line-height: 100px;
 }
 
-.header h2{
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-    font-weight:bold;
+.header h2 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
     font-size: 28px;
     color: rgb(255, 170, 13);
 }
 
-.header ul{
-}
+.header ul {}
 
-.header ul li{
+.header ul li {
     display: inline-block;
     margin: 0 40px;
     font-size: 20px;
 }
 
 
-.header ul li a{
+.header ul li a {
     text-decoration: none;
     color: whitesmoke;
 }
 
-.header ul li a:hover{
+.header ul li a:hover {
     color: rgb(255, 170, 13);
 }
 
 /* ---------- 導覽列 訂位醒目按鈕 ---------- */
-#bookingBtn{
+#bookingBtn {
     padding: 20px 30px;
     background: rgb(255, 170, 13);
     border-radius: 20px;
     color: black;
 }
 
-#bookingBtn:hover{
+#bookingBtn:hover {
     color: whitesmoke;
 }
 
 
 /* ---------- 首頁 Banner區域 ---------- */
 
-.banner{
-    background: url("https://picsum.photos/id/723/2000/650") no-repeat;
-    height: 650px;
+.banner {
+    background: url("../Images/Index/banner/banner-6-1.png") no-repeat;
+    height: 600px;
     width: 100%;
-    margin: 0 auto;
-    display: inline-block;
+    margin: auto;
+    display: flex;
 }
 
+.banner p{
+    margin: auto;   
+   font-family:Georgia, 'Times New Roman', Times, serif;
+   font-size: 60px;
+   letter-spacing: 10px;
+   color: rgb(255, 170, 13);
 
-
-
-
-
-
-
+}
 
 
 /* ---------- 首頁 Menu動畫區域 ---------- */
@@ -88,12 +88,20 @@ body {
 
 .indexMenu {
     display: flex;
-    margin: 50px auto;
-
-    
+    padding: 100px 0;
+ 
 }
 
-.indexMenuitem ul li{
+
+.indexMenuitem{
+    display: inline-block;
+    margin: 0 auto;
+}
+.indexMenuitem ul{
+}
+
+
+.indexMenuitem ul li {
     display: inline-block;
 }
 
@@ -102,15 +110,63 @@ body {
 
 /* ---------- 首頁 餐廳資訊區域 ---------- */
 
+.map{
+    background: rgb(106, 101, 101);
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+}
+.map iframe{
+    box-shadow: 10px 10px 20px 0px rgba(0,0,0,0.75);
 
+}
 
-
-
+.map iframe:hover{
+    box-shadow: 10px 15px 30px 0px rgba(0,0,0,0.75);
+}
 
 
 /* ---------- Footer 區域 ---------- */
-.footer{
+/* .footer {
     height: 150px;
     background: rgb(26, 26, 26);
     color: rgb(255, 170, 13);
+} */
+
+/* ---------- Footer 區域 ---------- */
+.footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    background: rgb(26, 26, 26);
+    color: rgb(255, 170, 13);
+    height: 150px;
+    font-size: 18px;
+}
+
+.footer-section {
+    flex: 1;
+    text-align: center;
+}
+
+.footer-logo {
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.footer-section p {
+    margin: 10px 0;
+    line-height: 2;
+}
+
+.footer-section a {
+    color: rgb(255, 170, 13);
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.footer-section a:hover {
+    color: rgb(255, 255, 255);
 }
