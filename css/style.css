@@ -1,0 +1,116 @@
+@import url('reset.css');
+
+body {
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    background: rgb(49, 49, 49);
+}
+
+.wrap {
+    width: 100%;
+    height: 100vh;
+    margin: auto;
+
+}
+
+/* ---------- 導覽列區域 ---------- */
+.header {
+    height: 100px;
+    background: rgb(26, 26, 26);
+}
+
+.header nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    line-height: 100px;
+}
+
+.header h2{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight:bold;
+    font-size: 28px;
+    color: rgb(255, 170, 13);
+}
+
+.header ul{
+}
+
+.header ul li{
+    display: inline-block;
+    margin: 0 40px;
+    font-size: 20px;
+}
+
+
+.header ul li a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+.header ul li a:hover{
+    color: rgb(255, 170, 13);
+}
+
+/* ---------- 導覽列 訂位醒目按鈕 ---------- */
+#bookingBtn{
+    padding: 20px 30px;
+    background: rgb(255, 170, 13);
+    border-radius: 20px;
+    color: black;
+}
+
+#bookingBtn:hover{
+    color: whitesmoke;
+}
+
+
+/* ---------- 首頁 Banner區域 ---------- */
+
+.banner{
+    background: url("https://picsum.photos/id/723/2000/650") no-repeat;
+    height: 650px;
+    width: 100%;
+    margin: 0 auto;
+    display: inline-block;
+}
+
+
+
+
+
+
+
+
+
+
+/* ---------- 首頁 Menu動畫區域 ---------- */
+
+
+.indexMenu {
+    display: flex;
+    margin: 50px auto;
+
+    
+}
+
+.indexMenuitem ul li{
+    display: inline-block;
+}
+
+
+
+
+/* ---------- 首頁 餐廳資訊區域 ---------- */
+
+
+
+
+
+
+
+/* ---------- Footer 區域 ---------- */
+.footer{
+    height: 150px;
+    background: rgb(26, 26, 26);
+    color: rgb(255, 170, 13);
+}
