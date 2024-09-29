@@ -2,7 +2,7 @@
 
     body {
         font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-        background: rgb(49, 49, 49);
+        background: rgb(97, 90, 90);
     }
 
     .wrapper {
@@ -30,17 +30,19 @@
         z-index: 3;
     }
 
-    .header h2 {
+    .header h2 a {
         position: absolute;
         left: 8%;
+        text-decoration: none;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
         font-weight: bold;
-        font-size: 28px;
+        font-size: 32px;
         color: rgb(255, 170, 13);
     }
 
     .header ul {
         display: flex;
+        position: absolute;
     }
 
     .header ul li {
@@ -62,14 +64,36 @@
     .header img {
         width: 100%;
         height: 800px;
-        opacity: .5;
+        opacity: .4;
     }
 
-    .nav-btn {
+    .nav-icon {
         position: absolute;
-        top: 200px;
-        right: 500px;
+        top: 0;
+        right: 3%;
+    }
 
+    nav h3 {
+        position: absolute;
+        color: rgb(255, 170, 13);
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 80px;
+        font-weight: bolder;
+        font-style: italic;
+        text-align: center;
+        letter-spacing: 45px;
+        top: 300px;
+    }
+
+    nav p {
+        position: absolute;
+        color: rgb(237, 105, 52);
+        word-spacing: 30px;
+        letter-spacing: 5px;
+        font-size: 42px;
+        font-style: italic;
+        text-align: center;
+        top: 450px;
     }
 
 
@@ -86,31 +110,55 @@
     #bookingBtn:hover {
         color: whitesmoke;
         font-weight: 900;
+        letter-spacing: 3px;
+        transition: .5s;
     }
 
 
-    /* ---------- Banner區域 ---------- */
-
-    .banner {
-        height: 600px;
-        width: 100%;
-        margin: auto;
-        display: flex;
-    }
-
-    .banner p {
-        margin: auto;
-        font-family: Georgia, 'Times New Roman', Times, serif;
-        font-size: 60px;
-        letter-spacing: 10px;
-        color: rgb(255, 170, 13);
-
-    }
 
     /* ---------- News 最新消息區域 ---------- */
+    .news {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 80px;
+    }
 
+    .news h2 {
+        display: block;
+        color: whitesmoke;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-weight: 600;
+        font-size: 36px;
+        margin-bottom: 80px;
+        letter-spacing: 45px;
+    }
 
+    .news-tab {
+        border: 1px solid ghostwhite;
+        width: 70%;
+        height: 350px;
+        padding: 50px;
+    }
 
+    .news-tab ul {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+    .news-tab ul li {
+        border-bottom: 1px solid ghostwhite;
+        width: 100%;
+        line-height: 3;
+        text-align: center;
+    }
+
+    .news-tab ul li:hover {
+        color: rgb(255, 170, 13);
+        word-spacing: 10px;
+        transition: .5s;
+    }
 
 
 
@@ -120,6 +168,9 @@
     .indexMenu {
         display: flex;
         padding: 100px 0;
+        margin-top: 120px;
+        border: 5px solid red;
+        background: rgb(75, 72, 72);
 
     }
 
@@ -140,8 +191,21 @@
 
     /* ---------- Reservation 訂位區域 ---------- */
 
+    .index-booking {
+        text-align: center;
+        border: 5px solid blue;
+        height: 700px;
+        width: 100%;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-weight: 600;
+        font-size: 36px;
+    }
 
-
+    .index-booking a {
+        text-align: center;
+        /* position: absolute; */
+        /* top: 0; */
+    }
 
 
     /* ---------- Location 餐廳資訊區域 ---------- */
