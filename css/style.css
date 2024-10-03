@@ -109,13 +109,14 @@
         border-radius: 0.75rem;
         font-weight: 500;
         color: black;
+        transition: color .7s, font-weight .7s, letter-spacing .7s, padding .7s;
     }
 
     #bookingBtn:hover {
         color: whitesmoke;
         font-weight: 900;
         letter-spacing: 3px;
-        transition: .5s;
+        padding: 15px 25px;
     }
 
     /* ---------- About 餐廳簡介區域 ---------- */
@@ -243,9 +244,6 @@
     }
 
 
-
-    /* ---------- Reservation 訂位區域 ---------- */
-
     /* ---------- Reservation 訂位區域 ---------- */
 
     .index-booking {
@@ -257,20 +255,17 @@
         font-weight: 600;
         font-size: 36px;
         display: flex;
-        /* 使用 Flexbox */
         justify-content: center;
-        /* 垂直置中 */
+
         align-items: center;
-        /* 水平置中 */
+
         overflow: hidden;
-        /* 確保內容不超出邊界 */
+
     }
 
     .index-booking a {
         position: absolute;
-        /* 這裡改為相對定位 */
         z-index: 5;
-        /* 確保連結在上層 */
         text-decoration: none;
         text-align: center;
         padding: 10px 20px;
@@ -278,14 +273,14 @@
         border-radius: 12px;
         font-weight: 500;
         color: black;
-        transition: color 0.5s, font-weight 0.5s, letter-spacing 0.5s;
-        /* 效果變化 */
+        transition: color .7s, font-weight .7s, letter-spacing .7s, padding .7s;
     }
 
     .index-booking a:hover {
         color: whitesmoke;
         font-weight: 900;
         letter-spacing: 3px;
+        padding: 15px 25px;
     }
 
     .index-booking img {
