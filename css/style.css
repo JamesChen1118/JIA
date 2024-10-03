@@ -127,7 +127,6 @@
         text-align: center;
         height: 30rem;
         margin: 10rem;
-        border: 5px solid red;
     }
 
     .about-title {
@@ -175,7 +174,6 @@
         flex-direction: column;
         align-items: center;
         margin: 10rem;
-        border: 5px solid blue;
     }
 
     .news h2 {
@@ -206,12 +204,13 @@
         width: 100%;
         line-height: 3;
         text-align: center;
+        transition: color .7s, word-spacing .7s;
+
     }
 
     .news-tab ul li:hover {
         color: rgb(255, 170, 13);
         word-spacing: 10px;
-        transition: .5s;
     }
 
 
@@ -258,11 +257,8 @@
         font-size: 36px;
         display: flex;
         justify-content: center;
-
         align-items: center;
-
         overflow: hidden;
-
     }
 
     .index-booking a {
@@ -287,12 +283,9 @@
 
     .index-booking img {
         opacity: 0.3;
-        /* 設定透明度 */
         max-height: 75vh;
-        /* 減小高度 */
         width: 100%;
         object-fit: cover;
-        /* 確保圖片自動縮放並保持比例 */
     }
 
 
@@ -301,13 +294,13 @@
     .map {
         display: flex;
         justify-content: space-evenly;
-        align-items: ;
+        align-items: center;
         padding: 50px;
     }
 
     .map-text {
-        width: 400px;
-        line-height: 2;
+        width: 500px;
+        line-height: 3;
         color: rgb(255, 170, 13);
         word-spacing: 5px;
         font-family: Georgia, 'Times New Roman', Times, serif;
@@ -343,31 +336,10 @@
         font-size: 18px;
     }
 
-    .footer-section {
-        flex: 1;
-        text-align: center;
-        display: flex;
-    }
 
     .footer-logo {
         font-family: Verdana, Geneva, Tahoma, sans-serif;
         font-weight: bold;
         font-size: 2rem;
         color: rgb(255, 170, 13);
-    }
-
-    .footer-section p {
-        margin: 10px 0;
-        line-height: 2;
-    }
-
-    .footer-section a {
-        color: rgb(255, 170, 13);
-        margin: 0 10px;
-        text-decoration: none;
-        font-size: 20px;
-    }
-
-    .footer-section a:hover {
-        color: rgb(255, 255, 255);
     }
