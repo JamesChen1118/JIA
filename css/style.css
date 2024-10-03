@@ -230,21 +230,31 @@
 
     /* ---------- Reservation 訂位區域 ---------- */
 
+    /* ---------- Reservation 訂位區域 ---------- */
+
     .index-booking {
-        background: url('../Images/Index/Izakaya-2.jpg');
+        position: relative;
         background-position: 50%;
-        /* opacity: .5; */
         min-height: 70vh;
         width: 100%;
         font-family: Georgia, 'Times New Roman', Times, serif;
         font-weight: 600;
         font-size: 36px;
         display: flex;
+        /* 使用 Flexbox */
         justify-content: center;
+        /* 垂直置中 */
         align-items: center;
+        /* 水平置中 */
+        overflow: hidden;
+        /* 確保內容不超出邊界 */
     }
 
     .index-booking a {
+        position: absolute;
+        /* 這裡改為相對定位 */
+        z-index: 5;
+        /* 確保連結在上層 */
         text-decoration: none;
         text-align: center;
         padding: 10px 20px;
@@ -252,13 +262,24 @@
         border-radius: 12px;
         font-weight: 500;
         color: black;
+        transition: color 0.5s, font-weight 0.5s, letter-spacing 0.5s;
+        /* 效果變化 */
     }
 
     .index-booking a:hover {
         color: whitesmoke;
         font-weight: 900;
         letter-spacing: 3px;
-        transition: .5s;
+    }
+
+    .index-booking img {
+        opacity: 0.3;
+        /* 設定透明度 */
+        max-height: 75vh;
+        /* 減小高度 */
+        width: 100%;
+        object-fit: cover;
+        /* 確保圖片自動縮放並保持比例 */
     }
 
 
