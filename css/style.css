@@ -6,7 +6,8 @@
 
     body {
         font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-        background-image: linear-gradient(195deg, rgb(52, 51, 51) 0%, rgb(82, 80, 80) 33%, rgb(56, 54, 54) 65%, rgb(29, 29, 29) 100%);
+        background: rgb(52, 51, 51);
+        background: radial-gradient(circle, rgba(52, 51, 51, 1) 4%, rgba(82, 80, 80, 1) 40%, rgba(56, 54, 54, 1) 74%);
     }
 
     .wrapper {
