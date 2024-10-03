@@ -126,7 +126,7 @@
     .about {
         text-align: center;
         height: 30rem;
-        padding: 10rem;
+        margin: 10rem;
         border: 5px solid red;
     }
 
@@ -136,7 +136,6 @@
         font-family: Georgia, 'Times New Roman', Times, serif;
         font-weight: 600;
         font-size: 2rem;
-        margin-bottom: 5rem;
         letter-spacing: 3rem;
     }
 
