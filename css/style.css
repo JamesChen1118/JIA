@@ -8,36 +8,40 @@
         font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
         background: rgb(52, 51, 51);
         background: radial-gradient(circle, rgba(52, 51, 51, 1) 4%, rgba(82, 80, 80, 1) 40%, rgba(56, 54, 54, 1) 74%);
+        font-size: 16px;
     }
 
     .wrapper {
         width: 100%;
-        /* height: 100vh; */
-        /* margin: auto; */
     }
 
     /* --------- Navbar 導覽列  ---------  */
-    .header {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-    }
+    /* --------- Navbar導覽列 - header section  ---------  */
 
-    .header nav {
-        position: absolute;
+    .header {
+        position: fixed;
+        top: 0;
+        left: 0;
         width: 100%;
-        height: 6rem;
-        display: flex;
-        align-items: flex-start;
-        justify-content: center;
-        line-height: 6rem;
-        background: rgba(26, 26, 26, .7);
         z-index: 3;
     }
 
-    .header h2 a {
-        position: absolute;
-        left: 8%;
+    .header nav {
+        padding: 0 20px;
+        width: 100%;
+        height: 6rem;
+        display: flex;
+        justify-content: space-between;
+        line-height: 6rem;
+        background: rgba(26, 26, 26, .7);
+    }
+
+    /* --------- Navbar導覽列 - logo section  ---------  */
+    .logo {
+        padding: 0 0 0 60px;
+    }
+
+    .logo a {
         text-decoration: none;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
         font-weight: bold;
@@ -45,41 +49,49 @@
         color: rgb(255, 170, 13);
     }
 
-    .header ul {
+
+    /* --------- Navbar導覽列 - 選單 section  ---------  */
+
+    .nav-list {
         display: flex;
-        position: absolute;
     }
 
-    .header ul li {
-        display: block;
-        margin: 0 2.5rem;
+    .nav-item {
+        padding: 0 40px;
         font-size: 1.25rem;
     }
 
-
-    .header ul li a {
+    .nav-item a {
         text-decoration: none;
         color: whitesmoke;
     }
 
-    .header ul li a:hover {
+    .nav-item a:hover {
         color: rgb(255, 170, 13);
     }
 
-    .header img {
+    .nav-btn {}
+
+    /* --------- Banner 區域  ---------  */
+    .banner {
+        position: relative;
+    }
+
+    .banner img {
         width: 100%;
         height: 80vh;
         opacity: 0.4;
         object-fit: cover;
     }
 
-    .nav-icon {
+    .banner-title {
         position: absolute;
-        top: 0;
-        right: 3%;
+        top: 200px;
+        left: 50%;
+        transform: translateX(-50%);
     }
 
-    nav h3 {
+    .banner h3 {
         position: relative;
         color: rgb(255, 170, 13);
         font-family: Georgia, 'Times New Roman', Times, serif;
@@ -88,10 +100,9 @@
         font-style: italic;
         text-align: center;
         letter-spacing: 2.5rem;
-        top: 18rem;
     }
 
-    nav p {
+    .banner p {
         position: absolute;
         color: rgb(237, 105, 52);
         word-spacing: 1.8rem;
@@ -99,7 +110,6 @@
         font-size: 2.5rem;
         font-style: italic;
         text-align: center;
-        top: 28rem;
     }
 
 
