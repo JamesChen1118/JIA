@@ -129,16 +129,12 @@ body {
 
 /* --------- Sidebar 商品分類 --------- */
 .sidebar {
-    width: 15%;
-    height: 500px;
+    width: 20%;
+    height: 1500px;
     background-color: #333;
     border-radius: 10px;
     padding: 30px;
     color: white;
-    background-image: url('your-japanese-background-image.jpg');
-    /* 替換為您的日式風格背景圖 */
-    background-size: cover;
-    /* 確保背景圖覆蓋整個區域 */
 }
 
 .sidebar h2 {
@@ -157,6 +153,8 @@ body {
 .sidebar ul {
     list-style: none;
     padding: 0;
+    text-align: center;
+
 }
 
 .sidebar li {
@@ -166,7 +164,7 @@ body {
 .sidebar a {
     color: white;
     text-decoration: none;
-    font-size: 1.1rem;
+    font-size: 24px;
     /* 輕微增大字體 */
     transition: color 0.3s ease;
     /* 過渡效果 */
@@ -178,6 +176,71 @@ body {
     text-decoration: underline;
     /* hover 時加下劃線 */
 }
+
+/* --------- best-sellers 商品分類 --------- */
+.best-sellers {
+    margin-top: 100px;
+}
+
+.section-title {
+    font-size: 1.5rem;
+    /* 提高字體大小以便與其他部分一致 */
+    margin-bottom: 15px;
+    font-weight: bold;
+    /* 加粗字體以增強可讀性 */
+    color: rgb(255, 170, 13);
+    /* 使用與整體設計相符的顏色 */
+}
+
+.showcase-wrapper {
+    display: flex;
+    flex-direction: column;
+    /* 保持垂直排列 */
+    margin: 10px 0;
+    /* 增加上下間距以增強可讀性 */
+}
+
+.showcase {
+    display: flex;
+    margin-bottom: 20px;
+    /* 增加底部間距以保持一致性 */
+    align-items: center;
+    /* 垂直居中對齊圖片和內容 */
+}
+
+.showcase-img-box {
+    margin-right: 20px;
+    /* 增加右邊距以便於區分 */
+}
+
+.showcase-img {
+    border-radius: 5px;
+    width: 80px;
+    /* 設置固定寬度，以便所有圖片保持一致大小 */
+    height: auto;
+    /* 根據寬度自動調整高度 */
+}
+
+.showcase-content {
+    flex-grow: 1;
+    /* 允許內容區域增長以填充剩餘空間 */
+}
+
+.showcase-title {
+    font-size: 1.25rem;
+    /* 提高字體大小以便於閱讀 */
+    margin: 5px 0;
+    color: #fff;
+    /* 使用白色字體以對比背景 */
+}
+
+.showcase-rating {
+    margin: 5px 0;
+    color: rgb(255, 170, 13);
+    /* 使用與整體設計相符的顏色 */
+}
+
+/* --------- product 商品分類 --------- */
 
 .product-list {
     width: 80%;
