@@ -48,7 +48,6 @@
 
 
     /* --------- Navbar導覽列 - 選單 section  ---------  */
-
     .nav-list {
         display: flex;
     }
@@ -61,13 +60,43 @@
     .nav-item a {
         text-decoration: none;
         color: whitesmoke;
+        margin: 0;
+        padding: 0;
+        position: relative;
+        display: inline-block;
+    }
+
+    .nav-item a h3 {
+        /* margin: 0;
+        padding: 0;
+        position: relative; */
+        /* display: inline-block; */
+    }
+
+    .nav-item a::after {
+        content: "";
+        /* 添加下劃線 */
+        display: block;
+        width: 100%;
+        height: 3px;
+        /* 下劃線高度 */
+        background: rgb(255, 170, 13);
+        /* 下劃線顏色 */
+        transition: transform 0.5s ease;
+        /* 添加過渡效果 */
+        transform: scaleX(0);
+        /* 初始狀態為隱藏 */
+    }
+
+    .nav-item a:hover::after {
+        transform: scaleX(1);
+        /* 滑鼠懸停時顯示下劃線 */
     }
 
     .nav-item a:hover {
         color: rgb(255, 170, 13);
     }
 
-    .nav-btn {}
 
     /* --------- Banner 區域  ---------  */
     .banner {
