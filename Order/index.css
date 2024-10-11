@@ -1,0 +1,349 @@
+@import './reset.css';
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    background: rgb(52, 51, 51);
+    background: radial-gradient(circle, rgba(52, 51, 51, 1) 4%, rgba(82, 80, 80, 1) 40%, rgba(56, 54, 54, 1) 74%);
+    font-size: 16px;
+    margin: 0;
+}
+
+/* --------- Navbar 導覽列 --------- */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 3;
+}
+
+.header nav {
+    padding: 0 20px;
+    width: 100%;
+    height: 6rem;
+    display: flex;
+    justify-content: space-between;
+    line-height: 6rem;
+    background: rgba(26, 26, 26, .7);
+}
+
+.logo {
+    padding: 0 0 0 60px;
+}
+
+.logo a {
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    font-size: 2rem;
+    color: rgb(255, 170, 13);
+}
+
+.nav-list {
+    display: flex;
+}
+
+.nav-item {
+    padding: 0 40px;
+    font-size: 1.25rem;
+}
+
+.nav-item a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+.nav-item a:hover {
+    color: rgb(255, 170, 13);
+}
+
+#bookingBtn {
+    padding: 10px 20px;
+    background: rgb(255, 170, 13);
+    border-radius: 0.75rem;
+    font-weight: 500;
+    color: black;
+    transition: color .7s, font-weight .7s, letter-spacing .7s, padding .7s;
+}
+
+#bookingBtn:hover {
+    color: whitesmoke;
+    font-weight: 900;
+    letter-spacing: 3px;
+    padding: 15px 25px;
+}
+
+/* --------- Banner 區域 --------- */
+.banner {
+    position: relative;
+}
+
+.banner img {
+    width: 100%;
+    height: 80vh;
+    opacity: 0.4;
+    object-fit: cover;
+}
+
+.banner-title {
+    position: absolute;
+    top: 350px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+}
+
+.banner h3 {
+    position: relative;
+    color: rgb(255, 170, 13);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 5rem;
+    font-weight: bolder;
+    font-style: italic;
+    text-align: center;
+    letter-spacing: 2.5rem;
+}
+
+.banner p {
+    color: rgb(237, 105, 52);
+    word-spacing: 1.8rem;
+    letter-spacing: 5px;
+    font-size: 2.5rem;
+    font-style: italic;
+    text-align: center;
+    margin-top: 80px;
+}
+
+/* --------- Main Content --------- */
+.main-content {
+    width: 80%;
+    display: flex;
+    align-items: self-start;
+    margin: 20px auto;
+    /* 留出導航欄的高度 */
+}
+
+/* --------- Sidebar 商品分類 --------- */
+.sidebar {
+    width: 15%;
+    height: 500px;
+    background-color: #333;
+    border-radius: 10px;
+    padding: 30px;
+    color: white;
+    background-image: url('your-japanese-background-image.jpg');
+    /* 替換為您的日式風格背景圖 */
+    background-size: cover;
+    /* 確保背景圖覆蓋整個區域 */
+}
+
+.sidebar h2 {
+    font-size: 24px;
+    /* 字體稍小 */
+    margin-bottom: 20px;
+    font-weight: bold;
+    /* 加粗字體 */
+    text-align: center;
+    /* 置中對齊 */
+    color: rgb(255, 170, 13);
+    /* 和諧的顏色 */
+}
+
+/* 分類列表樣式 */
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar li {
+    margin: 15px 0;
+}
+
+.sidebar a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    /* 輕微增大字體 */
+    transition: color 0.3s ease;
+    /* 過渡效果 */
+}
+
+.sidebar a:hover {
+    color: rgb(255, 170, 13);
+    /* hover 時改變顏色 */
+    text-decoration: underline;
+    /* hover 時加下劃線 */
+}
+
+.product-list {
+    width: 80%;
+    margin-left: 30px;
+    /* padding: 30px; */
+}
+
+/* 
+.product-list h2 {
+    color: yellow;
+    font-family: Verdana;
+    font-size: 48px;
+    text-align: center;
+} */
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+
+.product-item {
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    /* 預設陰影 */
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+    /* 統一過渡效果 */
+}
+
+.product-item:hover {
+    transform: scale(1.05);
+    -webkit-box-shadow: 0 0 10px hsla(0, 0%, 0%, 0.1);
+    box-shadow: 0 0 10px hsla(0, 0%, 0%, 0.1);
+}
+
+
+.product-banner img {
+    width: 100%;
+    height: auto;
+}
+
+.product-content {
+    padding: 10px;
+}
+
+.product-category {
+    display: block;
+    font-size: 0.8rem;
+    /* 調小字體 */
+    color: #aaa;
+    /* 淺灰色 */
+    margin-bottom: 5px;
+    text-transform: uppercase;
+    /* 大寫字母 */
+}
+
+/* 2. 美化 product-title 的樣式 */
+.product-title {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    /* 加粗 */
+    font-size: 1.5rem;
+    /* 調整字體大小 */
+    position: relative;
+    /* 便於後續效果 */
+}
+
+.product-title h3 {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    display: inline-block;
+    /* 使標題可以應用下劃線效果 */
+}
+
+.product-title h3::after {
+    content: "";
+    /* 添加下劃線 */
+    display: block;
+    width: 100%;
+    height: 3px;
+    /* 下劃線高度 */
+    background: rgb(255, 170, 13);
+    /* 下劃線顏色 */
+    transition: transform 0.3s ease;
+    /* 添加過渡效果 */
+    transform: scaleX(0);
+    /* 初始狀態為隱藏 */
+}
+
+.product-title h3:hover::after {
+    transform: scaleX(1);
+    /* 滑鼠懸停時顯示下劃線 */
+}
+
+/* 3. 美化購物車加減按鈕 */
+.price-btn {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.price-btn button {
+    width: 36px;
+    /* 按鈕寬度 */
+    height: 36px;
+    /* 按鈕高度 */
+    font-size: 1.5rem;
+    /* 字體大小 */
+    background-color: rgb(255, 170, 13);
+    /* 按鈕背景色 */
+    border: none;
+    /* 去掉邊框 */
+    border-radius: 5px;
+    /* 圓角 */
+    color: black;
+    /* 按鈕文字顏色 */
+    cursor: pointer;
+    /* 鼠標變成手指 */
+    transition: background-color 0.3s;
+    /* 添加過渡效果 */
+}
+
+.price-btn button:hover {
+    background-color: rgba(255, 170, 13, 0.8);
+    /* 滑鼠懸停時背景顏色變化 */
+}
+
+.price-btn label {
+    margin: 0 10px;
+    /* 上下左右間距 */
+    font-size: 1.2rem;
+    /* 調整字體大小 */
+    color: #333;
+    /* 顏色 */
+    width: 40px;
+    /* 控制標籤的寬度 */
+    text-align: center;
+    /* 文字居中 */
+    border: 1px solid rgba(255, 170, 13, 0.5);
+    /* 標籤邊框 */
+    border-radius: 5px;
+    /* 標籤圓角 */
+    padding: 5px;
+    /* 標籤內邊距 */
+}
+
+/* ---------- Footer 區域 ---------- */
+.footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    background: rgb(26, 26, 26);
+    color: rgb(255, 170, 13);
+    height: 150px;
+    font-size: 18px;
+}
+
+
+.footer-logo {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    font-size: 2rem;
+    color: rgb(255, 170, 13);
+}
