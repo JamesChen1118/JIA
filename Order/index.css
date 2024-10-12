@@ -129,7 +129,7 @@ body {
 
 .sidebar {
     width: 20%;
-    height: 1500px;
+    height: 2000px;
     background-color: #333;
     border-radius: 15px;
     padding: 30px;
@@ -145,15 +145,11 @@ body {
     border-bottom: 1px solid #bbaf48;
 }
 
-.sidebar ul {
-    padding: 0;
-    text-align: center;
 
-}
-
-.sidebar li {
-    margin-top: 35px;
+.product-categories {
+    margin-top: 15px;
     list-style: none;
+    text-align: center;
 }
 
 .categories-btn {
@@ -239,34 +235,27 @@ body {
 }
 
 .product-content {
-    padding: 15px;
+    padding: 20px;
 }
 
 .product-category {
     display: block;
-    font-size: 18px;
-    color: rgb(228, 170, 77);
+    font-size: 20px;
+    color: rgb(240, 201, 130);
     font-weight: bolder;
     letter-spacing: 2px;
     margin-bottom: 10px;
 }
 
-.product-title {
-    text-decoration: none;
-    color: #333;
-    font-weight: bold;
-    font-size: 1.5rem;
-    position: relative;
-}
 
 .product-title h3 {
-    margin: 0;
-    padding: 0;
-    position: relative;
+    text-decoration: none;
+    font-weight: bold;
     display: inline-block;
     color: whitesmoke;
     font-size: 25px;
     text-align: center;
+    padding: 5px;
 }
 
 .product-title h3::after {
@@ -284,8 +273,8 @@ body {
     transform: scaleX(1);
 }
 
-.price-box {
-    margin: 5px;
+.product-price {
+    color: rgb(255, 170, 13);
     font-size: 20px;
 }
 
@@ -296,10 +285,10 @@ body {
 }
 
 .price-btn button {
-    width: 36px;
-    height: 36px;
-    font-size: 1.5rem;
-    background-color: rgb(255, 170, 13);
+    width: 30px;
+    height: 30px;
+    font-size: 20px;
+    background-color: rgb(245, 222, 180);
     border: none;
     border-radius: 5px;
     color: black;
