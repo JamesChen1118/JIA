@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
     <title>Reservation</title>
+    <link rel="stylesheet" href="index.css" />
   </head>
 
   <body>
@@ -31,7 +32,59 @@
           <h3>JIA</h3>
           <p>Modern Creative Izakaya</p>
         </div>
-        <img src="./Images/Index/banner/banner-6-1.png" alt="" />
+        <img src="../Images/Index/banner/banner-6.png" alt="" />
+      </div>
+    </div>
+
+    <!-- ---------- Reservation 區域 ---------- -->
+
+    <div class="reservation-section">
+      <div class="reservation-form">
+        <div class="form-name">
+          <label>訂位大名 :</label>
+          <input type="text" placeholder="請填寫姓名" />
+        </div>
+        <div class="form-date">
+          <label>訂位日期 :</label>
+          <input type="date" />
+        </div>
+        <div class="form-time">
+          <label>訂位時段 :</label>
+          <input type="time" />
+        </div>
+        <div class="form-name">
+          <label>電子信箱 :</label>
+          <input type="email" placeholder="請填寫信箱" />
+        </div>
+        <div class="form-name">
+          <label>連絡電話 :</label>
+          <input type="number" placeholder="請填寫手機號碼" />
+        </div>
+        <div class="form-select">
+          <label>訂位人數 :</label>
+          <select name="select" id="#">
+            <option value="1">1 位</option>
+            <option value="2">2 位</option>
+            <option value="3">3 位</option>
+            <option value="4">4 位</option>
+          </select>
+        </div>
+
+        <button class="form-btn">確認送出</button>
+      </div>
+      <div class="reservation-img">
+        <img src="./images/booking/reservation.jpg" alt="" />
+      </div>
+    </div>
+
+    <!-- --------- Footer 區域 --------- -->
+    <div class="footer">
+      <h2 class="footer-logo">J I A</h2>
+      <p>&copy; JIA 2024 - Modern Creative Izakaya</p>
+      <div class="footer-media">
+        <a href="#"><i class="fa fa-facebook"></i></a>
+        <a href="#"><i class="fa fa-instagram"></i></a>
+        <a href="#"><i class="fa fa-twitter"></i></a>
       </div>
     </div>
   </body>
