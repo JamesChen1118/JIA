@@ -83,14 +83,11 @@
         background: rgb(255, 170, 13);
         /* 下劃線顏色 */
         transition: transform 0.5s ease;
-        /* 添加過渡效果 */
         transform: scaleX(0);
-        /* 初始狀態為隱藏 */
     }
 
     .nav-item a:hover::after {
         transform: scaleX(1);
-        /* 滑鼠懸停時顯示下劃線 */
     }
 
     .nav-item a:hover {
@@ -148,14 +145,15 @@
         border-radius: 0.75rem;
         font-weight: 500;
         color: black;
-        transition: color .7s, font-weight .7s, letter-spacing .7s, padding .7s;
+        transition: color .7s, font-weight .7s, letter-spacing .7s, transform .7s ease, padding .7s;
     }
 
     #bookingBtn:hover {
         color: whitesmoke;
         font-weight: 900;
         letter-spacing: 3px;
-        padding: 15px 25px;
+        transform: scale(1.1);
+        padding: 10px 30px;
     }
 
     /* ---------- About 餐廳簡介區域 ---------- */
