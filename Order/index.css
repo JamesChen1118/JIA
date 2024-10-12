@@ -224,8 +224,8 @@ body {
 
 .product-item:hover {
     transform: scale(1.05);
-    -webkit-box-shadow: 0 0 10px hsla(0, 0%, 0%, 0.1);
-    box-shadow: 0 0 10px hsla(0, 0%, 0%, 0.1);
+    -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 
