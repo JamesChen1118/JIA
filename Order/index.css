@@ -185,17 +185,13 @@ body {
     margin-top: 100px;
     display: flex;
     flex-direction: column;
-}
-
-.best-sellers-list {
-    display: flex;
+    color: rgb(228, 170, 77);
 }
 
 .best-sellers-item {
     display: flex;
     margin: 20px;
     flex-wrap: wrap;
-    align-items: center;
     align-items: center;
 }
 
@@ -223,7 +219,7 @@ body {
 }
 
 .product-item {
-    background-color: white;
+    background-color: rgb(120, 117, 117);
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
@@ -243,28 +239,24 @@ body {
 }
 
 .product-content {
-    padding: 10px;
+    padding: 15px;
 }
 
 .product-category {
     display: block;
     font-size: 18px;
-    color: tomato;
+    color: rgb(228, 170, 77);
     font-weight: bolder;
     letter-spacing: 2px;
     margin-bottom: 10px;
 }
 
-/* 2. 美化 product-title 的樣式 */
 .product-title {
     text-decoration: none;
     color: #333;
     font-weight: bold;
-    /* 加粗 */
     font-size: 1.5rem;
-    /* 調整字體大小 */
     position: relative;
-    /* 便於後續效果 */
 }
 
 .product-title h3 {
@@ -272,7 +264,9 @@ body {
     padding: 0;
     position: relative;
     display: inline-block;
-    /* 使標題可以應用下劃線效果 */
+    color: whitesmoke;
+    font-size: 25px;
+    text-align: center;
 }
 
 .product-title h3::after {
@@ -280,6 +274,7 @@ body {
     display: block;
     width: 100%;
     height: 3px;
+    margin-top: 3px;
     background: rgb(255, 170, 13);
     transition: transform 0.3s ease;
     transform: scaleX(0);
@@ -287,10 +282,13 @@ body {
 
 .product-title h3:hover::after {
     transform: scaleX(1);
-    /* 滑鼠懸停時顯示下劃線 */
 }
 
-/* 3. 美化購物車加減按鈕 */
+.price-box {
+    margin: 5px;
+    font-size: 20px;
+}
+
 .price-btn {
     display: flex;
     align-items: center;
@@ -315,9 +313,10 @@ body {
 
 .price-btn label {
     margin: 0 10px;
-    font-size: 1.2rem;
-    color: #333;
-    width: 40px;
+    font-size: 20px;
+    color: #3e0de0;
+    font-weight: bolder;
+    width: 60px;
     text-align: center;
     border: 1px solid rgba(255, 170, 13, 0.5);
     border-radius: 5px;
