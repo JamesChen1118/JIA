@@ -1,0 +1,157 @@
+@import url('reset.css');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    background: rgb(52, 51, 51);
+    background: radial-gradient(circle, rgba(52, 51, 51, 1) 4%, rgba(82, 80, 80, 1) 40%, rgba(56, 54, 54, 1) 74%);
+    font-size: 16px;
+}
+
+
+/* --------- Navbar 導覽列  ---------  */
+/* --------- Navbar導覽列 - header section  ---------  */
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 3;
+}
+
+.header nav {
+    padding: 0 20px;
+    width: 100%;
+    height: 6rem;
+    display: flex;
+    justify-content: space-between;
+    line-height: 6rem;
+    background: rgba(26, 26, 26, .7);
+}
+
+/* --------- Navbar導覽列 - logo section  ---------  */
+.logo {
+    padding: 0 0 0 60px;
+}
+
+.logo a {
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    font-size: 2rem;
+    color: rgb(255, 170, 13);
+}
+
+
+/* --------- Navbar導覽列 - 選單 section  ---------  */
+.nav-list {
+    display: flex;
+}
+
+.nav-item {
+    padding: 0 40px;
+    font-size: 1.25rem;
+}
+
+.nav-item a {
+    text-decoration: none;
+    color: whitesmoke;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    display: inline-block;
+}
+
+.nav-item a h3 {
+    /* margin: 0;
+    padding: 0;
+    position: relative; */
+    /* display: inline-block; */
+}
+
+.nav-item a::after {
+    content: "";
+    /* 添加下劃線 */
+    display: block;
+    width: 100%;
+    height: 3px;
+    /* 下劃線高度 */
+    background: rgb(255, 170, 13);
+    /* 下劃線顏色 */
+    transition: transform 0.5s ease;
+    transform: scaleX(0);
+}
+
+.nav-item a:hover::after {
+    transform: scaleX(1);
+}
+
+.nav-item a:hover {
+    color: rgb(255, 170, 13);
+}
+
+
+/* --------- Banner 區域  ---------  */
+.banner {
+    position: relative;
+}
+
+.banner img {
+    width: 100%;
+    height: 80vh;
+    opacity: 0.4;
+    object-fit: cover;
+}
+
+.banner-title {
+    position: absolute;
+    top: 200px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.banner h3 {
+    position: relative;
+    color: rgb(255, 170, 13);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 5rem;
+    font-weight: bolder;
+    font-style: italic;
+    text-align: center;
+    letter-spacing: 2.5rem;
+}
+
+.banner p {
+    position: absolute;
+    color: rgb(237, 105, 52);
+    word-spacing: 1.8rem;
+    letter-spacing: 5px;
+    font-size: 2.5rem;
+    font-style: italic;
+    text-align: center;
+}
+
+
+
+
+/* ---------- Navbar 訂位醒目按鈕 ---------- */
+#bookingBtn {
+    padding: 10px 20px;
+    background: rgb(255, 170, 13);
+    border-radius: 0.75rem;
+    font-weight: 500;
+    color: black;
+    transition: color .7s, font-weight .7s, letter-spacing .7s, transform .7s ease, padding .7s;
+}
+
+#bookingBtn:hover {
+    color: whitesmoke;
+    font-weight: 900;
+    letter-spacing: 3px;
+    transform: scale(1.1);
+    padding: 10px 30px;
+}
