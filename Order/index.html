@@ -30,91 +30,48 @@
           <h3>JIA</h3>
           <p>Modern Creative Izakaya</p>
         </div>
-        <img src="./Images/Index/banner/banner-6-1.png" alt="" />
+        <img src="../Images/Index/banner/banner-1.png" alt="" />
       </div>
 
-      <div class="main-content">
-        <aside class="sidebar">
-          <h2>商品分類</h2>
+      <div class="main">
+        <!-- /* --------- Sidebar 商品分類 --------- */ -->
+        <div class="sidebar">
+          <h2 id="product-title">商品分類</h2>
           <ul class="product-categories">
-            <li><a href="#">燒烤</a></li>
-            <li><a href="#">壽司</a></li>
-            <li><a href="#">飲料</a></li>
-            <li><a href="#">甜點</a></li>
+            <li><a class="categories-btn" href="#">燒烤</a></li>
+            <li><a class="categories-btn" href="#">壽司</a></li>
+            <li><a class="categories-btn" href="#">飲料</a></li>
+            <li><a class="categories-btn" href="#">甜點</a></li>
           </ul>
-          <div class="best-sellers">
-            <h3 class="section-title">排行榜商品</h3>
-            <div class="showcase-wrapper">
-              <div class="showcase-container">
-                <div class="showcase">
-                  <a href="#" class="showcase-img-box">
-                    <img src="https://picsum.photos/id/684/80/80" alt="" />
-                  </a>
-                  <div class="showcase-content">
-                    <a href="#">
-                      <h4 class="showcase-title">example product 1</h4>
-                    </a>
-                    <div class="showcase-rating">
-                      <ion-icon
-                        name="star"
-                        role="img"
-                        class="md hydrated"
-                        aria-label="star"
-                      ></ion-icon>
-                      <ion-icon
-                        name="star"
-                        role="img"
-                        class="md hydrated"
-                        aria-label="star"
-                      ></ion-icon>
-                      <ion-icon
-                        name="star"
-                        role="img"
-                        class="md hydrated"
-                        aria-label="star"
-                      ></ion-icon>
-                      <ion-icon
-                        name="star"
-                        role="img"
-                        class="md hydrated"
-                        aria-label="star"
-                      ></ion-icon>
-                      <ion-icon
-                        name="star-half-outline"
-                        role="img"
-                        class="md hydrated"
-                        aria-label="star half outline"
-                      ></ion-icon>
-                    </div>
-                    <div class="price-box">
-                      <del>$10.00</del>
-                      <p class="price">$8.00</p>
-                    </div>
-                  </div>
-                </div>
 
-                <div class="showcase">
-                  <a href="#" class="showcase-img-box">
-                    <img src="https://picsum.photos/id/637/80/80" alt="" />
+          <!-- /* --------- best-sellers 商品分類 --------- */ -->
+
+          <div class="best-sellers">
+            <h3 id="product-title">排行榜商品</h3>
+            <div class="best-sellers-list">
+              <div class="best-sellers-item">
+                <img
+                  class="showcase-img-box"
+                  src="https://picsum.photos/id/684/80/80"
+                  alt=""
+                />
+                <div class="showcase-content">
+                  <a href="#" class="product-title">
+                    <h3>鮭魚壽司</h3>
                   </a>
-                  <div class="showcase-content">
-                    <a href="#">
-                      <h4 class="showcase-title">example product 2</h4>
-                    </a>
-                    <div class="price-box">
-                      <p class="price">$10.00</p>
-                    </div>
+                  <div class="price-box">
+                    <p class="price">$80.00</p>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </aside>
+        </div>
+
+        <!-- /* --------- product 商品分類 --------- */ -->
 
         <div class="product-list">
-          <!-- <h2>商品列表</h2> -->
           <div class="product-grid">
-            <!-- 商品項目 -->
             <div class="product-item">
               <div class="product-banner">
                 <img src="https://picsum.photos/id/684/300/340" alt="" />

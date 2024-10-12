@@ -67,14 +67,15 @@ body {
     border-radius: 0.75rem;
     font-weight: 500;
     color: black;
-    transition: color .7s, font-weight .7s, letter-spacing .7s, padding .7s;
+    transition: color .7s, font-weight .7s, letter-spacing .7s, transform .7s ease, padding .7s;
 }
 
 #bookingBtn:hover {
     color: whitesmoke;
     font-weight: 900;
     letter-spacing: 3px;
-    padding: 15px 25px;
+    transform: scale(1.1);
+    padding: 10px 30px;
 }
 
 /* --------- Banner 區域 --------- */
@@ -118,143 +119,102 @@ body {
     margin-top: 80px;
 }
 
-/* --------- Main Content --------- */
-.main-content {
+/* --------- Sidebar 商品分類 --------- */
+
+.main {
     width: 80%;
     display: flex;
-    align-items: self-start;
-    margin: 20px auto;
-    /* 留出導航欄的高度 */
+    margin: 120px auto;
 }
 
-/* --------- Sidebar 商品分類 --------- */
 .sidebar {
     width: 20%;
     height: 1500px;
     background-color: #333;
-    border-radius: 10px;
+    border-radius: 15px;
     padding: 30px;
     color: white;
 }
 
-.sidebar h2 {
-    font-size: 24px;
-    /* 字體稍小 */
-    margin-bottom: 20px;
-    font-weight: bold;
-    /* 加粗字體 */
-    text-align: center;
-    /* 置中對齊 */
+#product-title {
+    font-size: 30px;
+    font-weight: bolder;
     color: rgb(255, 170, 13);
-    /* 和諧的顏色 */
+    text-align: center;
+    padding: 20px;
+    border-bottom: 1px solid #bbaf48;
 }
 
-/* 分類列表樣式 */
 .sidebar ul {
-    list-style: none;
     padding: 0;
     text-align: center;
 
 }
 
 .sidebar li {
-    margin: 15px 0;
+    margin-top: 35px;
+    list-style: none;
 }
 
-.sidebar a {
-    color: white;
+.categories-btn {
+    margin-top: 35px;
+    list-style: none;
+    display: inline-block;
+    padding: 10px 80px;
+    background: rgb(255, 170, 13);
+    border-radius: 0.75rem;
+    font-weight: 500;
+    color: black;
     text-decoration: none;
     font-size: 24px;
-    /* 輕微增大字體 */
-    transition: color 0.3s ease;
-    /* 過渡效果 */
+    transition: color 0.7s, font-weight 0.7s, letter-spacing 0.7s, transform 0.7s ease;
+    ;
 }
 
-.sidebar a:hover {
-    color: rgb(255, 170, 13);
-    /* hover 時改變顏色 */
-    text-decoration: underline;
-    /* hover 時加下劃線 */
+.categories-btn:hover {
+    color: whitesmoke;
+    font-weight: 900;
+    letter-spacing: 3px;
+    transform: scale(1.1);
+    cursor: pointer;
 }
+
 
 /* --------- best-sellers 商品分類 --------- */
 .best-sellers {
     margin-top: 100px;
-}
-
-.section-title {
-    font-size: 1.5rem;
-    /* 提高字體大小以便與其他部分一致 */
-    margin-bottom: 15px;
-    font-weight: bold;
-    /* 加粗字體以增強可讀性 */
-    color: rgb(255, 170, 13);
-    /* 使用與整體設計相符的顏色 */
-}
-
-.showcase-wrapper {
     display: flex;
     flex-direction: column;
-    /* 保持垂直排列 */
-    margin: 10px 0;
-    /* 增加上下間距以增強可讀性 */
 }
 
-.showcase {
+.best-sellers-list {
     display: flex;
-    margin-bottom: 20px;
-    /* 增加底部間距以保持一致性 */
-    align-items: center;
-    /* 垂直居中對齊圖片和內容 */
 }
 
-.showcase-img-box {
-    margin-right: 20px;
-    /* 增加右邊距以便於區分 */
+.best-sellers-item {
+    display: flex;
+    margin: 20px;
+    flex-wrap: wrap;
+    align-items: center;
+    align-items: center;
 }
 
 .showcase-img {
-    border-radius: 5px;
-    width: 80px;
-    /* 設置固定寬度，以便所有圖片保持一致大小 */
-    height: auto;
-    /* 根據寬度自動調整高度 */
-}
-
-.showcase-content {
-    flex-grow: 1;
-    /* 允許內容區域增長以填充剩餘空間 */
+    width: 50px;
 }
 
 .showcase-title {
-    font-size: 1.25rem;
-    /* 提高字體大小以便於閱讀 */
-    margin: 5px 0;
+    font-size: 20px;
     color: #fff;
-    /* 使用白色字體以對比背景 */
 }
 
-.showcase-rating {
-    margin: 5px 0;
-    color: rgb(255, 170, 13);
-    /* 使用與整體設計相符的顏色 */
-}
 
 /* --------- product 商品分類 --------- */
 
 .product-list {
     width: 80%;
     margin-left: 30px;
-    /* padding: 30px; */
 }
-
-/* 
-.product-list h2 {
-    color: yellow;
-    font-family: Verdana;
-    font-size: 48px;
-    text-align: center;
-} */
 
 .product-grid {
     display: grid;
@@ -267,9 +227,7 @@ body {
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-    /* 預設陰影 */
     transition: box-shadow 0.3s ease, transform 0.3s ease;
-    /* 統一過渡效果 */
 }
 
 .product-item:hover {
@@ -290,13 +248,11 @@ body {
 
 .product-category {
     display: block;
-    font-size: 0.8rem;
-    /* 調小字體 */
-    color: #aaa;
-    /* 淺灰色 */
-    margin-bottom: 5px;
-    text-transform: uppercase;
-    /* 大寫字母 */
+    font-size: 18px;
+    color: tomato;
+    font-weight: bolder;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
 }
 
 /* 2. 美化 product-title 的樣式 */
@@ -321,17 +277,12 @@ body {
 
 .product-title h3::after {
     content: "";
-    /* 添加下劃線 */
     display: block;
     width: 100%;
     height: 3px;
-    /* 下劃線高度 */
     background: rgb(255, 170, 13);
-    /* 下劃線顏色 */
     transition: transform 0.3s ease;
-    /* 添加過渡效果 */
     transform: scaleX(0);
-    /* 初始狀態為隱藏 */
 }
 
 .product-title h3:hover::after {
@@ -348,47 +299,29 @@ body {
 
 .price-btn button {
     width: 36px;
-    /* 按鈕寬度 */
     height: 36px;
-    /* 按鈕高度 */
     font-size: 1.5rem;
-    /* 字體大小 */
     background-color: rgb(255, 170, 13);
-    /* 按鈕背景色 */
     border: none;
-    /* 去掉邊框 */
     border-radius: 5px;
-    /* 圓角 */
     color: black;
-    /* 按鈕文字顏色 */
     cursor: pointer;
-    /* 鼠標變成手指 */
     transition: background-color 0.3s;
-    /* 添加過渡效果 */
 }
 
 .price-btn button:hover {
     background-color: rgba(255, 170, 13, 0.8);
-    /* 滑鼠懸停時背景顏色變化 */
 }
 
 .price-btn label {
     margin: 0 10px;
-    /* 上下左右間距 */
     font-size: 1.2rem;
-    /* 調整字體大小 */
     color: #333;
-    /* 顏色 */
     width: 40px;
-    /* 控制標籤的寬度 */
     text-align: center;
-    /* 文字居中 */
     border: 1px solid rgba(255, 170, 13, 0.5);
-    /* 標籤邊框 */
     border-radius: 5px;
-    /* 標籤圓角 */
     padding: 5px;
-    /* 標籤內邊距 */
 }
 
 /* ---------- Footer 區域 ---------- */
